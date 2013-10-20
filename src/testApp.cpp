@@ -43,7 +43,7 @@ void testApp::setup(){
 //--------------------------------------------------------------
 void testApp::update(){
 	
-	if (bSendSerialMessage){
+	if (!bSendSerialMessage){
 		
 		// (1) write the letter "a" to serial:
 		serial.writeByte('a');
